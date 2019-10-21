@@ -6,6 +6,8 @@ class OraxCli < Formula
 
   bottle :unneeded
 
+  option "with-background-cores=", "The number of cores to use for the background service."
+
   def install
     mv "orax-cli-darwin-amd64", "orax-cli"
     bin.install "orax-cli"
@@ -36,6 +38,8 @@ class OraxCli < Formula
       <array>
         <string>#{opt_bin}/orax-cli</string>
         <string>mine</string>
+        #{ARGV.value("with-background-cores") ? '<string>-n</string>' : ''}
+        #{ARGV.value("with-background-cores") ? "<string>#{ARGV.value("with-background-cores")}</string>" : ''}
       </array>
       <key>RunAtLoad</key>
       <false/>
