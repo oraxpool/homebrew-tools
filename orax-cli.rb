@@ -1,8 +1,8 @@
 class OraxCli < Formula
   desc "CLI tool for the PegNet mining pool Orax"
   homepage "https://www.oraxpool.com"
-  url "https://oraxpool.s3.ca-central-1.amazonaws.com/orax-cli/orax-cli-darwin-amd64-1.0.11.tar.gz"
-  sha256 "0003e42be91f663c3dc11a77be9938963dea86be79abcf1a8b547227f8604487"
+  url "https://oraxpool.s3.ca-central-1.amazonaws.com/orax-cli/orax-cli-darwin-amd64-1.1.0.tar.gz"
+  sha256 "b423567602de29ecc2b58820ce4286490b6512186dc888b05b9ed10c83935321"
 
   bottle :unneeded
 
